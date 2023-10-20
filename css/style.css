@@ -25,12 +25,34 @@ html{
 font-size: 62.5%;
 }
 
+/******************************************
+/* LAYOUT
+/*******************************************/
+
 header{
     border-bottom: 2px solid black;
     display: flex;
+    justify-content: space-around;
 }
-header>*{
-    border: 3px solid black;
+.navLinks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+/*
+.topNav>*{
+    margin: 0 1rem;
+  }
+  */
+.topNav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    margin: 0 1.5rem;
 }
 
 body {
