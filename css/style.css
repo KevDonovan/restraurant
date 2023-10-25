@@ -58,4 +58,22 @@ li{
 body {
     font-size: 1.6rem;
 }
+
+.slideshow{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.slideshow div{
+    display: flex;
+    margin: 0 auto;
+}
+
+.slideshow div span{
+    position: relative;
+    width: 97.5vw;
+    max-width: 100%;
+    border: 3px solid black;
+}
   
