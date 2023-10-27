@@ -18,8 +18,14 @@ backBtn.addEventListener('click', ()=> {
     slideWindow[0].scrollLeft -= viewWidth;
 });
 
+
+//ensures the slide stays in place when window resizes.
 function scrollToImg() {
-    slideWindow[0].scrollTo(slideImages[slideNum].offsetLeft, slideImages[slideNum].offsetTop);
+    slideWindow[0].scrollTo({
+        left: slideImages[slideNum].offsetLeft, 
+        top: slideImages[slideNum].offsetTop,
+        behavior: "instant",
+    });
 }
 
 window.onresize = scrollToImg;
