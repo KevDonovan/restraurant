@@ -6,21 +6,24 @@ let slideImages = document.getElementsByClassName('imageSlide')
 
 nextBtn.addEventListener('click', ()=> {
     if(slideNum < 3) slideNum++;
-    let viewWidth = document.getElementById('imageSlide').offsetWidth;
-    slideWindow[0].style.scrollBehavior = "smooth";
-    slideWindow[0].scrollLeft += viewWidth;
+    smoothScroll();
 });
 
 backBtn.addEventListener('click', ()=> {
     if(slideNum > 0) slideNum--;
-    let viewWidth = document.getElementById('imageSlide').offsetWidth;
-    slideWindow[0].style.scrollBehavior = "smooth";
-    slideWindow[0].scrollLeft -= viewWidth;
+    smoothScroll();
 });
 
+function smoothScroll() {
+    slideWindow[0].scrollTo({
+        left: slideImages[slideNum].offsetLeft, 
+        top: slideImages[slideNum].offsetTop,
+        behavior: "smooth",
+    });
+}
 
 //ensures the slide stays in place when window resizes.
-function scrollToImg() {
+function scrollOnResize() {
     slideWindow[0].scrollTo({
         left: slideImages[slideNum].offsetLeft, 
         top: slideImages[slideNum].offsetTop,
@@ -28,4 +31,4 @@ function scrollToImg() {
     });
 }
 
-window.onresize = scrollToImg;
+window.onresize = scrollOnResize;
