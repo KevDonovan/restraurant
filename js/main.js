@@ -5,7 +5,7 @@ let slideNum = 0;
 let slideImages = document.getElementsByClassName('imageSlide')
 
 nextBtn.addEventListener('click', ()=> {
-    if(slideNum < 3) slideNum++;
+    if(slideNum < slideImages.length - 1) slideNum++;
     smoothScroll();
 });
 
