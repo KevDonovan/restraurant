@@ -23,8 +23,7 @@
 
 html{
     font-size: 62.5%;
-    background-color: #63322b;
-    color: white;
+    background-color: #5e352f;
 }
 
 .borderColor{
@@ -115,6 +114,8 @@ body {
 
 .mission{
     display: flex;
+    justify-content: space-between;
+    padding: 3rem;
     width: 98%;
     margin: auto;
     height: 50vh;
@@ -128,12 +129,17 @@ body {
     align-items: center;
 }
 
+.missionText{
+    background-color: #cfcecc;
+}
 .missionText>*{
     width: 50%;
 }
 
 .reviews{
     display: flex;
+    justify-content: space-between;
+    padding: 3rem;
     width: 98%;
     margin: auto;
     height: 50vh;
@@ -145,6 +151,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.reviewText{
+    background-color: #cfcecc;
 }
 
 .reviewText>*{
@@ -160,6 +170,8 @@ body {
 
 .info{
     display: flex;
+    justify-content: space-between;
+    padding: 3rem;
     width: 98%;
     margin: auto;
     height: 50vh;
@@ -171,6 +183,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.infoText{
+    background-color: #cfcecc;
 }
 
 .infoText>*{
