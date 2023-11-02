@@ -22,6 +22,15 @@ function smoothScroll() {
     });
 }
 
+function autoScroll() {
+    setTimeout(() => {
+        if(slideNum === 3) slideNum = 0;
+        else slideNum++;
+        smoothScroll();
+        autoScroll();
+    }, 6000);
+}
+
 //ensures the slide stays in place when window resizes.
 function scrollOnResize() {
     slideWindow[0].scrollTo({
@@ -32,3 +41,4 @@ function scrollOnResize() {
 }
 
 window.onresize = scrollOnResize;
+autoScroll();
