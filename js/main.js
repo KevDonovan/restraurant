@@ -3,6 +3,7 @@ let backBtn = document.getElementById('backBtn');
 let nextBtn = document.getElementById('nextBtn');
 let slideNum = 0;
 let slideImages = document.getElementsByClassName('imageSlide')
+let scrollInterval = null;
 
 nextBtn.addEventListener('click', ()=> {
     if(slideNum < slideImages.length - 1) slideNum++;
@@ -20,14 +21,15 @@ function smoothScroll() {
         top: slideImages[slideNum].offsetTop,
         behavior: "smooth",
     });
+    autoScroll();
 }
 
 function autoScroll() {
-    setTimeout(() => {
+    clearInterval(scrollInterval);
+    scrollInterval = setInterval(() => {
         if(slideNum === 3) slideNum = 0;
         else slideNum++;
         smoothScroll();
-        autoScroll();
     }, 6000);
 }
 
