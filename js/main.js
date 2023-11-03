@@ -6,13 +6,17 @@ let slideImages = document.getElementsByClassName('imageSlide')
 let scrollInterval = null;
 
 nextBtn.addEventListener('click', ()=> {
-    if(slideNum < slideImages.length - 1) slideNum++;
-    smoothScroll();
+    if(slideNum < slideImages.length - 1) {
+        slideNum++;
+        smoothScroll();
+    }
 });
 
 backBtn.addEventListener('click', ()=> {
-    if(slideNum > 0) slideNum--;
-    smoothScroll();
+    if(slideNum > 0) {
+        slideNum--;
+        smoothScroll();
+    }
 });
 
 function smoothScroll() {
