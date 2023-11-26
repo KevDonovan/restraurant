@@ -30,8 +30,8 @@
       <body>
         <div class="slideshow">
           <div class="slideArrows">
-            <span id="backBtn">&lt</span>
-            <span id="nextBtn">&gt</span>
+            <span id="backBtn"><i class="fa-solid fa-caret-left"></i></span>
+            <span id="nextBtn"><i class="fa-solid fa-caret-right"></i></span>
           </div>
           <div class="slideImages">
             <span class="imageSlide"><img src="\css\assets\foodImg1.jpg" alt="slideshow1"></span>
@@ -61,13 +61,18 @@
           </div>
         </div>
         <div class="gallery">
-          <span class="galleryThumb"><img src="\css\assets\foodImg6.jpg" alt="food"></span>
-          <span class="galleryThumb"><img src="\css\assets\foodImg5.jpg" alt="food"></span>
-          <span class="galleryThumb"><img src="\css\assets\foodImg4.jpg" alt="food"></span>
-          <span class="galleryThumb"><img src="\css\assets\foodImg3.jpg" alt="food"></span>
-          <span class="galleryThumb"><img src="\css\assets\foodImg2.jpg" alt="food"></span>
-          <span class="galleryThumb"><img src="\css\assets\foodImg1.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg6.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg5.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg4.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg3.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg2.jpg" alt="food"></span>
+          <span class="galleryThumb"><img class="foodImg" src="\css\assets\foodImg1.jpg" alt="food"></span>
         </div>
+        <div class="foodModal">
+          <img class="fullImage" src="#" alt="Large food image">
+          <button name="button" type="button" id="closeModal">&times;</button>
+        </div>
+        <div class="overlay"></div>
         <div class="info">
           <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d372.18224893747947!2d-87.87581818424826!3d41.73221328374247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700351672136!5m2!1sen!2sus" 

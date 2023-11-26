@@ -4,6 +4,27 @@ let nextBtn = document.getElementById('nextBtn');
 let slideNum = 0;
 let slideImages = document.getElementsByClassName('imageSlide')
 let scrollInterval = null;
+const modal = document.querySelector('.foodModal');
+const overlay = document.querySelector('.overlay');
+const thumbNails = document.querySelectorAll('.foodImg');
+
+overlay.addEventListener('click', closeModal);
+document.querySelector('#closeModal').addEventListener('click', closeModal)
+
+thumbNails.forEach(img => {
+    img.addEventListener('click', openModal);
+})
+
+function openModal() {
+    modal.classList.add('active');
+    overlay.classList.add('active');
+    document.querySelector('.fullImage').src = this.src;
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+}
 
 nextBtn.addEventListener('click', ()=> {
     if(slideNum < slideImages.length - 1) {
