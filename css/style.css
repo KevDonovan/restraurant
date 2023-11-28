@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair&display=swap');
 /* Box Model Hack */
 * {
     box-sizing: border-box;   
@@ -24,6 +25,7 @@
 html{
     font-size: 62.5%;
     background-color: #536058;
+    font-family: Playfair, serif;
 }
 
 .borderColor{
@@ -53,15 +55,29 @@ header{
     object-fit: contain;
 }
 
-.navLinks{
+.headerNav{
     display: flex;
-    align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-.headerNav li{
+.navLinks li{
     display: inline-block;
     margin: 0 1.5rem;
+}
+
+.navLinks a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #733a14;
+    background-color: #d4cdc1;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+.navLinks a:hover{
+    color: #536058;
+    text-decoration: underline;
 }
 
 body {
