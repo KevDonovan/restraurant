@@ -233,13 +233,12 @@ body {
 
 #closeModal{
     position: absolute;
-    top: 0.2rem;
-    left: 95.2%;
+    top: 0;
+    left: 100%;
+    opacity: 0.6;
+    background-color: white;
     cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
