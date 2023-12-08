@@ -301,3 +301,16 @@ footer{
     width:100%;
     text-align: center;
 }
+
+.menu{
+    background-color: #d4cdc1;
+    width: 95%;
+    margin: auto;
+
+}
+.menu>h2{
+    text-align: center;
+}
+.menu>ul{
+    list-style-type: none;
+}
