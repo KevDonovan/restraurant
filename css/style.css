@@ -306,7 +306,8 @@ footer{
     background-color: #d4cdc1;
     width: 95%;
     margin: auto;
-
+    line-height: 3rem;
+    font-size: 3rem;
 }
 .menu>h2{
     text-align: center;
