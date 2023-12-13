@@ -308,10 +308,15 @@ footer{
     margin: auto;
     line-height: 3rem;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .menu>h2{
     text-align: center;
 }
 .menu>ul{
     list-style-type: none;
+    text-align: right;
 }
