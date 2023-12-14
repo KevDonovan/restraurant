@@ -303,7 +303,7 @@ footer{
 }
 
 .menu{
-    background-color: #d4cdc1;
+    background: #cfcecc no-repeat center/60%  url("assets/foodImg5.jpg");
     width: 95%;
     margin: auto;
     line-height: 3rem;
