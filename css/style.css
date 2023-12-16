@@ -303,7 +303,9 @@ footer{
 }
 
 .menu{
-    background: #cfcecc no-repeat center/60%  url("assets/foodImg5.jpg");
+    /* background: #cfcecc no-repeat center/60%  url("assets/foodImg5.jpg"); */
+    background-color: #cfcecc;
+    position: relative;
     width: 95%;
     margin: auto;
     line-height: 3rem;
@@ -312,6 +314,18 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.menu>*:not(#foodBackground){
+    z-index: 2;
+}
+
+#foodBackground{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    opacity: 50%;
+    max-width: 60%;
 }
 .menu>h2{
     text-align: center;
