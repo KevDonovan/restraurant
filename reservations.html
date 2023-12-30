@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="description" content="Your description goes here">
+        <meta name="keywords" content="one, two, three">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+          <title>Les Savy Fav Bistro</title>
+  
+          <!-- external CSS link -->
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <header class="borderColor">
+        <span class='logo'><img class="logoImg" src="\css\assets\logo\cover.png" alt="logo"></span>
+        <nav class="headerNav">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="reservations.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+      <div class="reservations">
+        <form method="post" action="https://formspree.io/f/xwkdkwyq">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input type="text" name="subject" id="subject" placeholder="Subject" />
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+                <li><input type="reset" value="Clear Form" class="alt" /></li>
+            </ul>
+        </form>
+      </div>
+      <div class="info">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d372.18224893747947!2d-87.87581818424826!3d41.73221328374247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700351672136!5m2!1sen!2sus" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="infoText borderColor">
+          <p>(555) 555-5555</p>
+          <p>555 Harrington St, Providence RI</p>
+          <p>Tues-Thurs: 11AM - 8PM</p>
+          <p>Fri-Sun 9AM - 9PM</p>
+          <p>Mon: Closed</p>
+        </div>
+      </div>
+        <footer class="borderColor">
+          <div class="footDiv social">
+            <h4>Connect</h4>
+            <ul class="socialIcons">
+              <li><a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope fa-xl"></i></a></li>
+            </ul>
+          </div>
+          <div class="footDiv">
+            <nav class="footNav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="copyright">
+            <p>Les Savy Fav Bisto Copyright 2023</p>
+            <p>Created by Brookside Web Development</p>
+          </div>
+        </footer>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
