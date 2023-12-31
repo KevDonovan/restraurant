@@ -302,7 +302,7 @@ footer{
     text-align: center;
 }
 
-.menu{
+.menu, .reservations{
     background-color: #cfcecc;
     position: relative;
     width: 95%;
@@ -332,4 +332,24 @@ footer{
 .menu>ul{
     list-style-type: none;
     text-align: right;
+}
+
+.resForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+    width: 60%;
+}
+
+.resForm>*{
+    list-style-type: none;
+    margin: 0.8rem;
+}
+
+.dateTime{
+    margin: auto;
+}
+.dateTime>*{
+    margin: 1rem;
 }
