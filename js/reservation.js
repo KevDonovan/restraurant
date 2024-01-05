@@ -1,3 +1,9 @@
+const guestName = document.querySelector('#name').value;
+const phone = document.querySelector('#phone').value;
+const email = document.querySelector('#email').value;
+const time = document.querySelector('#time').value;
+const date = document.querySelector('#date').value;
+
 function requestReservation(){
     Email.send({
         Host : "smtp.gmail.com",
@@ -5,10 +11,17 @@ function requestReservation(){
         Password : "password",
         To : 'kevdonovan88@gmail.com',
         From : "lessavyfavbistro.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : "Reservation Request",
+        Body : `Name: ${guestName}
+                Phone: ${phone}
+                email: ${email}
+                date: ${date}
+                time: ${time}`
     }).then(
-      message => alert('request sent')
+      message => alert(message)
     );
 }
-document.querySelector('.resForm').addEventListener('submit', requestReservation());
+document.querySelector('.resForm').addEventListener('submit', (e) => {
+  requestReservation();
+  e.preventDefault();
+})
