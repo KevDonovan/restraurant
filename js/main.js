@@ -7,9 +7,12 @@ let scrollInterval = null;
 const modal = document.querySelector('.foodModal');
 const overlay = document.querySelector('.overlay');
 const thumbNails = document.querySelectorAll('.foodImg');
+const smallNav = document.querySelector('.smallNav');
+const smallNavContent = document.querySelector('.navDropContent');
 
 overlay.addEventListener('click', closeModal);
-document.querySelector('#closeModal').addEventListener('click', closeModal)
+document.querySelector('#closeModal').addEventListener('click', closeModal);
+smallNav.addEventListener('click', toggleSmallDrop);
 
 thumbNails.forEach(img => {
     img.addEventListener('click', openModal);
@@ -65,6 +68,11 @@ function scrollOnResize() {
         top: slideImages[slideNum].offsetTop,
         behavior: "instant",
     });
+}
+
+function toggleSmallDrop() {
+    if(!smallNavContent.classList.contains('active')) smallNavContent.classList.add('active');
+    else smallNavContent.classList.remove('active');
 }
 
 window.onresize = scrollOnResize;
