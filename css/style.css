@@ -37,7 +37,7 @@ html{
 /* LAYOUT
 /*******************************************/
 
-header{
+.pageTop{
     width: 96%;
     margin: auto;
     padding: 1rem 0;
@@ -84,6 +84,10 @@ header{
 .smallNav{
     display: none;
 }
+.navDropContent{
+    opacity: 0;
+    height: 0;
+}
 
 @media all and (max-width: 1000px){
     .headerNav{
@@ -92,7 +96,7 @@ header{
     .smallNav{
         display: block;
     }
-    header{
+    .pageTop{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -102,18 +106,20 @@ header{
       width: 100%;
       opacity: 0;
       pointer-events: none;
-      /* position: absolute; */
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 1rem;
       margin-top: 0;
-      background-color: black;
-      color: white;
-      opacity: 0;
+      color: #733a14;
+      background-color: #d4cdc1;
       transform: translateY(-0.5rem);
       transition: transform 200ms ease-in-out;
+      height: 0;
     }
   
     .navDropContent.active{
+      height: auto;
       opacity: 1;
       pointer-events: auto;
       z-index: 10;
@@ -122,6 +128,8 @@ header{
 
     .navDropContent *{
         width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #733a14;
     }
   }
 
