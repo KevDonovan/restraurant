@@ -89,50 +89,6 @@ html{
     height: 0;
 }
 
-@media all and (max-width: 1000px){
-    .headerNav{
-      display: none;
-    }
-    .smallNav{
-        display: block;
-    }
-    .pageTop{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .navDropContent{
-      width: 100%;
-      opacity: 0;
-      pointer-events: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      margin-top: 0;
-      color: #733a14;
-      background-color: #d4cdc1;
-      transform: translateY(-0.5rem);
-      transition: transform 200ms ease-in-out;
-      height: 0;
-    }
-  
-    .navDropContent.active{
-      height: auto;
-      opacity: 1;
-      pointer-events: auto;
-      z-index: 10;
-      transform: translateY(0);
-    }
-
-    .navDropContent *{
-        width: 100%;
-        text-align: center;
-        border-bottom: 2px solid #733a14;
-    }
-  }
-
 body {
     font-size: 1.6rem;
 }
@@ -404,4 +360,76 @@ footer{
 }
 .dateTime>*{
     margin: 1rem;
+}
+
+@media all and (max-width: 1000px){
+    .headerNav{
+      display: none;
+    }
+    .smallNav{
+        display: block;
+    }
+    .pageTop{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navDropContent{
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin-top: 0;
+      color: #733a14;
+      background-color: #d4cdc1;
+      transform: translateY(-0.5rem);
+      transition: transform 200ms ease-in-out;
+      height: 0;
+    }
+  
+    .navDropContent.active{
+      height: auto;
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 10;
+      transform: translateY(0);
+    }
+
+    .navDropContent *{
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #733a14;
+    }
+    .slideshow{
+        height: 66vh;
+    }
+    .mission, .reviews, .info{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.6rem;
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    }
+    .ownerImg img{
+        height: 66vh;
+    }
+    .reviews, .info{
+        flex-direction: column;
+    }
+    .mission{
+        flex-direction: column-reverse;
+    }
+    .mission>*, .reviews>*, .info>*{
+        width: 100%;
+        height: auto;
+    }
+    .gallery{
+        position: relative;
+        z-index: 10;
+    }
 }
