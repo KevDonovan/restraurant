@@ -366,13 +366,21 @@ footer{
     .headerNav{
       display: none;
     }
+    
     .smallNav{
         display: block;
     }
+
+    .dropIcon {
+        background-color: #cfcecc;
+        font-size: 3rem;
+    }
+
     .pageTop{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem;
     }
   
     .navDropContent{
@@ -397,6 +405,7 @@ footer{
       pointer-events: auto;
       z-index: 10;
       transform: translateY(0);
+      margin-bottom: 1rem;
     }
 
     .navDropContent *{
@@ -405,7 +414,10 @@ footer{
         border-bottom: 2px solid #733a14;
     }
     .slideshow{
-        height: 66vh;
+        height: auto;
+    }
+    .quote{
+        font-size: 1.2rem;
     }
     .mission, .reviews, .info{
         display: flex;
